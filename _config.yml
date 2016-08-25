@@ -1,0 +1,12 @@
+# Site settings.
+title: Jake's Move FAQ
+description: > 
+  An FAQ about my impending move to America.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://jake-waratahs.github.io" # the base hostname & protocol for your site
+twitter_username: jake1874
+# github_username:  jake-waratahs
+
+# Build settings
+markdown: kramdown
+# theme: minima
