@@ -1,49 +1,25 @@
 ---
 layout: default
+title: Blog
+extra_title: Nick Whyte | Programming and Exciting Things
+menu_order: 3
 ---
 
-<div class="home">
 
-  <h1>Welcome!</h1>
-  <p>
-    If you're here, it means you're probably part of my family, or a close enough friend to be considered family. Anyway, I'm going to be using this website to update details about my impending move to America, so friends and family can find information right here! Eventually, closer to when I move, I'll probably turn it into more of a blog so anyone who is interested can stay updated about my life.
-  </p>
-  <h3>What's Going On?</h3>
-  <p>
-    I've recieved a job offer from <a href="http://facebook.com" target="_blank">Facebook</a>, and I've decided that I'm going to take it. Facebook's office is in Menlo Park, California, which means I'm going to be moving to America.
-  </p>
-  <h3>Why Did You Take The Job?</h3>
-  <p>
-    The problems that Facebook comes up against every day are totally unlike any problems any other tech company has. How do you scale a social network to over a billion users? How do you keep it reliable? How do you consistently attract new users once you have reached a critical mass? These are the sorts of problems I am going to get to work on.
-    <br>
-    Also, I'm at a point in my life where I have nothing to lose, and nobody depending on me financially. It's an incredible opportunity to go live and work overseas.
-  </p>
-  <h3>When Are You Leaving?</h3>
-  <p>
-    My start date has been confirmed as February 6th, 2017. This means I get to be in Australia for a lot of important events over the summer, like Christmas, New Years, my Grandfather's birthday, my Father's birthday, my twenty-first birthday, my best friend's twenty-first birthday, Australia Day (and the Triple J Hottest 100), the Cricket season, the Sydney 7s Rugby tournament and (most exciting of all) Lee and Rob's baby coming round to say hi!
-  </p>
-  <h3>How Long Will You Be Gone?</h3>
-  <p>
-    Dunno. The contract doesn't have a time frame, but I do want to come back eventually, so I promise I'm not going forever.
-  </p>
-  <h3>Where Will You Live?</h3>
-  <p>
-    My good mate Steven is also going over to work at Facebook, and he starts about a week before I do, so we have decided to look for a place to live together, probably in or around Redwood City.
-    <img src="img/steven.jpg" />
-    That's me with Steven. He interned at Facebook early in 2016 so he knows the area and how to get things done there. We're pretty close.
-  </p>
-  <h3>Has Your Mother Threatened To Follow You Yet?</h3>
-  <p>
-    Yes. I think I'm having first night passover at my place and she has told me that she will be coming a month in advance to start cooking.
-  </p>
-  <h3>What About Your Dad?</h3>
-  <p>
-  	We have decided to go to the Las Vegas Rugby 7s tournament together.
-  </p>
-  <h3>How's Uni Going?</h3>
-  <p>
-    Glad you asked! It's going really well. It's sad that I'll be leaving after this semester because I have enjoyed it so much. I'm really loving my time at Uni at the moment because I'm doing a few really interesting courses.
-  </p>
-  <hr>
-  <p>If you have any other questions, please do get in touch!</p>
+{% for page in paginator.posts %}
+  {% include post.html %}
+{% endfor %}
+
+<div class="pagination text-center">
+{% if paginator.total_pages > 1 %}
+    {% if paginator.previous_page_path %}
+        <a href="{{ paginator.previous_page_path }}">&laquo; Previous Page</a>
+    {% endif %}
+    {% if paginator.previous_page_path and paginator.next_page_path %}
+    |
+    {% endif %}
+    {% if paginator.next_page_path %}
+        <a href="{{ paginator.next_page_path }}">Next Page &raquo;</a>
+    {% endif %}
+{% endif %}
 </div>

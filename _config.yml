@@ -1,12 +1,16 @@
 # Site settings.
-title: Jake's Move FAQ
-description: > 
-  An FAQ about my impending move to America.
-baseurl: "" # the subpath of your site, e.g. /blog
+title: Jake Bloom
+email: jakebloom744@gmail.com
+description: I write code and occasionally words too
+copyright: '&copy; Jake Bloom 2016'
+baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://jake-waratahs.github.io" # the base hostname & protocol for your site
 twitter_username: jake1874
-# github_username:  jake-waratahs
-
+github_username:  jake-waratahs
+paginate: 5
+paginate_path: "/:num"
+permalink: '/post/:year/:title/'
 # Build settings
 markdown: kramdown
-# theme: minima
+include: ['_pages']
+gems: [jekyll-paginate]
