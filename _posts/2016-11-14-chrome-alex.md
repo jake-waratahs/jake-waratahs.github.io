@@ -34,8 +34,9 @@ So when you click the icon, it sends a message to the background page to get the
 
 ## Limitations
 Unfortunately, there are a few limitations of the extension that I haven't been able to work around just yet, but I'll keep trying:
-    -  It probably won't work on your Facebook feed or other very complex web pages. This is because the DOM is so deeply nested, it takes a long time to retrieve the text on the page for processing.
-    - It doesn't work on Gmail. This is one I need to investigate more because I think checking your language while composing an email is a basic use case for this.
+
+-  It probably won't work on your Facebook feed or other very complex web pages. This is because the DOM is so deeply nested, it takes a long time to retrieve the text on the page for processing.
+- It doesn't work on Gmail. This is one I need to investigate more because I think checking your language while composing an email is a basic use case for this.
 
 ## When should I use it?
 If you're ever writing, reading or reviewing something online, you can use this to spot any language that you might consider changing. Fingers crossed we can all use this to be a bit more empathetic online 👌
