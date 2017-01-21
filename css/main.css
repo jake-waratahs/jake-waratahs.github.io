@@ -43,3 +43,7 @@ footer {
 body {
 	font-size: 16px;
 }
+
+#disqus_thread {
+	padding-top: 50px;
+}
