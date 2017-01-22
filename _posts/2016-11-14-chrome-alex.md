@@ -12,6 +12,8 @@ From Sydney airport, I got a cab to Uni, where there was a meeting among student
 
 That's not an abnormal travel schedule in my family, but this post isn't about that - that post is about what happened and what came out of that meeting.
 
+<!--break-->
+
 The meeting was called by our head of school and development office. At the meeting was [Aubrey Blanche](https://twitter.com/adblanche), Atlassian's Global Head of Diversity and Inclusion, as well as some other absolute legends including my friends DP, Bec, Adam and the other Adam. We had a really good chat about the issues facing all of us in the industry, and some things we could be doing.
 
 During the meeting, Aubrey mentioned that there was a JavaScript library called "alex", which scanned files for insensitive or offensive language. She said that she wished HipChat (Atlassian's corporate messaging application) had some capacity to do this in messages, and told me I should write a plugin to implement that.
