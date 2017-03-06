@@ -1,12 +1,19 @@
 <head>
     <meta charset="UTF-8">
     <title>
-        {% if page.title %}
-            {{ page.title }} | 
-        {% endif %}
-        {{ site.title }}
+        {% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}
     </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- OpenGraph Metadata -->
+    <meta property="og:title" content="{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+    {% if page.ogimage %}
+	<meta property="og:image" content="{{ page.ogimage }}" />
+    {% endif %}
+
+    <!-- Style -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/semantic.min.css">
     <link rel="stylesheet" href="/css/main.css">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/semantic.min.js"></script>
